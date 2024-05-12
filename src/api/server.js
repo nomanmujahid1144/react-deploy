@@ -15,13 +15,12 @@ app.use(bodyParser.json());
 
 
 // const connectionString = process.env.POSTGRES_PRISMA_URL || "postgres://default:GNPaX5WmRh9u@ep-square-meadow-a488ghyx.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require";
-const connectionString = "postgres://default:DHuOBkb9z7eI@ep-damp-breeze-a282mcll-pooler.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15";
+const connectionString = "postgres://default:DHuOBkb9z7eI@ep-damp-breeze-a282mcll-pooler.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require";
 
 // Create a pool
 const pool = new Pool({
-    connectionString: process.env.POSTGRES_URL,
+    connectionString: connectionString,
 })
-
 
 
 app.post('/update-leaderboard', async (req, res) => {
@@ -113,6 +112,8 @@ app.get('/leaderboard', async (req, res) => {
 // });
 // app.get("/app", (req, res) => res.send("Express on Vercel"));
 // app.listen(9001, () => console.log("Server ready on port 9001."));
+
+console.log()
 
 const port = process.env.PORT || 9001; // Use the PORT environment variable if available, otherwise default to 9001
 app.listen(port, () => console.log(`Server ready on vercel port ${port}.`));
