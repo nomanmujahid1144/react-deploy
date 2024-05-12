@@ -4,7 +4,7 @@ import axios from 'axios';
 
 let wallet_address = "";
 // const baseURL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:9001';
-const baseURL = 'https://ep-damp-breeze-a282mcll-pooler.eu-central-1.aws.neon.tech/';
+const baseURL = 'https://ep-damp-breeze-a282mcll-pooler.eu-central-1.aws.neon.tech';
 // const baseURL = 'http://localhost:9001';
 
 export const updateLeaderboardWithPublicKey = async (score: number) => {
