@@ -16,6 +16,7 @@
     "@types/node": "^16.11.41",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
+    "@vercel/postgres": "^0.8.0",
     "axios": "^1.6.8",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
