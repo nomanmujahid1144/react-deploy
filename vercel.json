@@ -10,7 +10,7 @@
             "config": { "distDir": "build" }
         }],
         "routes": [{
-                 "src": "/api/(.*)", "dest": "/api" 
+                 "src": "/api/(.*)", "dest": "/api/$1" 
             },{
             "src": "/(.*)",
             "dest": "/$1"
