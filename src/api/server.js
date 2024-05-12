@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { Pool } = require('pg');
-const { db } = require('@vercel/postgres');
 const cors = require('cors');
 
 const app = express();
@@ -15,8 +14,7 @@ app.use(bodyParser.json());
 
 
 
-// const connectionString = process.env.POSTGRES_PRISMA_URL || "postgres://default:GNPaX5WmRh9u@ep-square-meadow-a488ghyx.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require";
-const connectionString = db.connect();
+const connectionString = process.env.POSTGRES_PRISMA_URL || "postgres://default:GNPaX5WmRh9u@ep-square-meadow-a488ghyx.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require";
 
 // Create a pool
 const pool = new Pool({
