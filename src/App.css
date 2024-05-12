@@ -1,0 +1,85 @@
+/* Center the content horizontally and vertically */
+.flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  /* Style the canvas */
+  canvas {
+    background-color: black;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+
+  /* .start-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Change this to your desired background color 
+    z-index: 9999;  Make sure the start page is above other content 
+  }
+  
+  .transition-effect {
+    transition: transform 0.5s ease;
+    transform: translateX(-50%);
+  } */
+  
+  .slide-in{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform-origin: bottom;
+  }
+
+  .slide-out{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform-origin: top;
+  }
+
+  .start-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    text-align: center;
+    font-size: 24px;
+    z-index: 999; /* Ensure it's on top of other content */
+  }
+
+  .app-page {
+    z-index: 999; /* Ensure it's on top of other content */
+  }
+
+  .start-text {
+    color: white; /* Set the text color to white */
+  }
