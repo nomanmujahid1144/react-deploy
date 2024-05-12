@@ -3,7 +3,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import axios from 'axios';
 
 let wallet_address = "";
-const baseURL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:9001';
+const baseURL = process.env.REACT_APP_BACKEND_URL || 'https://pepe-run-server.vercel.app';
 // const baseURL = 'http://localhost:9001';
 
 export const updateLeaderboardWithPublicKey = async (score: number) => {
