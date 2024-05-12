@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 
 
 
-const connectionString = process.env.POSTGRES_PRISMA_URL || "postgres://default:GNPaX5WmRh9u@ep-square-meadow-a488ghyx.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require";
+// const connectionString = process.env.POSTGRES_PRISMA_URL || "postgres://default:GNPaX5WmRh9u@ep-square-meadow-a488ghyx.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require";
+const connectionString = "postgres://default:DHuOBkb9z7eI@ep-damp-breeze-a282mcll-pooler.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15";
 
 // Create a pool
 const pool = new Pool({
