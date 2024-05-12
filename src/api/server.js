@@ -19,8 +19,8 @@ const connectionString = "postgres://default:DHuOBkb9z7eI@ep-damp-breeze-a282mcl
 
 // Create a pool
 const pool = new Pool({
-    connectionString: connectionString,
-});
+    connectionString: process.env.POSTGRES_URL,
+})
 
 
 
